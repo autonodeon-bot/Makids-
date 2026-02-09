@@ -42,7 +42,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
               <img 
                 src={product.url} 
                 alt={product.title} 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain bg-slate-50"
               />
               {product.badge && (
                 <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 text-sm font-bold shadow-sm text-brand-600">

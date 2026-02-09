@@ -38,7 +38,8 @@ const Gallery: React.FC<GalleryProps> = ({ onProductClick }) => {
               viewport={{ once: true }}
               className="flex-shrink-0 w-80 md:w-auto snap-center mr-4 md:mr-0 group flex flex-col cursor-pointer"
             >
-              <div className="relative overflow-hidden aspect-[3/4] mb-6 shadow-md bg-slate-100">
+              {/* Changed aspect ratio to square (aspect-square) to prevent cropping of text on marketing images */}
+              <div className="relative overflow-hidden aspect-square mb-6 shadow-md bg-slate-100">
                 <img 
                   src={product.url} 
                   alt={product.title} 

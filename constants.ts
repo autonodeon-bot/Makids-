@@ -21,8 +21,7 @@ export const DISCOUNT_TIERS: DiscountTier[] = [
 export const PRODUCT_GALLERY: ProductImage[] = [
   {
     id: '1',
-    // Replace with your actual image file, e.g., '/images/bunny-softshell.jpg'
-    url: 'https://images.unsplash.com/photo-1546445317-236268757832?q=80&w=800&auto=format&fit=crop', 
+    url: '/image_0.jpg', 
     title: 'Softshell "Зайка"',
     description: 'Бежевый костюм с принтом зайца. Стильно и удобно.',
     tempRange: '+8°C ... +20°C',
@@ -32,7 +31,7 @@ export const PRODUCT_GALLERY: ProductImage[] = [
   },
   {
     id: '2',
-    url: 'https://images.unsplash.com/photo-1618397914838-8a8b8d0e7b8f?q=80&w=800&auto=format&fit=crop',
+    url: '/image_1.jpg',
     title: 'Softshell "Daisy"',
     description: 'Яркий фиолетовый костюм для девочек с любимым героем.',
     tempRange: '+8°C ... +20°C',
@@ -42,7 +41,7 @@ export const PRODUCT_GALLERY: ProductImage[] = [
   },
   {
     id: '3',
-    url: 'https://images.unsplash.com/photo-1519238263496-6361937a4ce9?q=80&w=800&auto=format&fit=crop',
+    url: '/image_2.jpg',
     title: 'Парка "Hooligan"',
     description: 'Хаки цвет, Premium ткань, стиль милитари.',
     tempRange: '+8°C ... +20°C',
@@ -52,7 +51,7 @@ export const PRODUCT_GALLERY: ProductImage[] = [
   },
   {
     id: '4',
-    url: 'https://images.unsplash.com/photo-1620248733276-857e49eb7232?q=80&w=800&auto=format&fit=crop',
+    url: '/image_3.jpg',
     title: 'Плащ "Music"',
     description: 'Фиолетовый плащ с музыкальным принтом.',
     tempRange: '+8°C ... +20°C',
@@ -62,7 +61,7 @@ export const PRODUCT_GALLERY: ProductImage[] = [
   },
   {
     id: '5',
-    url: 'https://images.unsplash.com/photo-1503919545885-d7780173f306?q=80&w=800&auto=format&fit=crop',
+    url: '/image_4.jpg',
     title: 'Softshell "Mickey"',
     description: 'Серый костюм. Стильная и удобная модель.',
     tempRange: '+8°C ... +20°C',
