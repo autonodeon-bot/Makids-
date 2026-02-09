@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAKIDS | Детская одежда оптом</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fdf4f4',
+                100: '#fbe8e8',
+                200: '#f7d0d0',
+                300: '#f0a8a8',
+                400: '#e67575',
+                500: '#d94949',
+                600: '#c43030',
+                800: '#8b2424',
+                900: '#752323',
+              },
+              accent: {
+                purple: '#9F7AEA',
+                beige: '#F5E6D3',
+                green: '#68D391'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900">
+    <div id="root"></div>
+  </body>
+</html>
