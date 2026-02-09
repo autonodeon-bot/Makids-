@@ -7,8 +7,8 @@ const Conditions = () => {
   return (
     <section id="conditions" className="py-20 bg-slate-900 text-white relative overflow-hidden">
         {/* Abstract shapes */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-purple/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-500/10 blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-purple/10 blur-3xl -translate-x-1/2 translate-y-1/2"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16">
@@ -25,7 +25,7 @@ const Conditions = () => {
 
             <div className="space-y-8">
               <div className="flex gap-6">
-                <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center flex-shrink-0 text-brand-400 border border-slate-700">
+                <div className="w-12 h-12 bg-slate-800 flex items-center justify-center flex-shrink-0 text-brand-400 border border-slate-700">
                     <BoxSelect />
                 </div>
                 <div>
@@ -35,7 +35,7 @@ const Conditions = () => {
               </div>
 
               <div className="flex gap-6">
-                <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center flex-shrink-0 text-brand-400 border border-slate-700">
+                <div className="w-12 h-12 bg-slate-800 flex items-center justify-center flex-shrink-0 text-brand-400 border border-slate-700">
                     <CreditCard />
                 </div>
                 <div>
@@ -45,7 +45,7 @@ const Conditions = () => {
               </div>
 
               <div className="flex gap-6">
-                <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center flex-shrink-0 text-brand-400 border border-slate-700">
+                <div className="w-12 h-12 bg-slate-800 flex items-center justify-center flex-shrink-0 text-brand-400 border border-slate-700">
                     <Clock />
                 </div>
                 <div>
@@ -56,7 +56,7 @@ const Conditions = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 bg-slate-800/50 p-8 rounded-3xl border border-slate-700 backdrop-blur-sm">
+          <div className="lg:w-1/2 bg-slate-800/50 p-8 border border-slate-700 backdrop-blur-sm">
             <div className="flex items-center gap-4 mb-8">
                 <Truck className="w-8 h-8 text-brand-400" />
                 <h3 className="text-2xl font-bold">Доставка</h3>
@@ -71,9 +71,9 @@ const Conditions = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: idx * 0.05 }}
-                        className="flex items-center px-4 py-3 bg-slate-700 rounded-lg text-slate-200"
+                        className="flex items-center px-4 py-3 bg-slate-700 text-slate-200"
                     >
-                        <div className="w-2 h-2 rounded-full bg-brand-400 mr-3"></div>
+                        <div className="w-2 h-2 bg-brand-400 mr-3"></div>
                         {method}
                     </motion.div>
                 ))}

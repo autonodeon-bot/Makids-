@@ -35,7 +35,7 @@ const Footer = () => {
 
           <div className="md:w-2/3">
              {/* Map Placeholder */}
-             <div className="w-full h-64 bg-slate-200 rounded-2xl overflow-hidden relative group">
+             <div className="w-full h-64 bg-slate-200 overflow-hidden relative group">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40268.80295842831!2d47.817349949999995!3d52.03348005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4115b0453730e9d9%3A0x86733276634863f6!2z0JHQsNC70LDQutC-0LLQviwg0KHQsNGA0LDRgtC-0LLRgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1716300000000!5m2!1sru!2sru" 
                     width="100%" 
@@ -46,7 +46,7 @@ const Footer = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                     className="grayscale group-hover:grayscale-0 transition-all duration-500"
                 ></iframe>
-                <div className="absolute top-4 right-4 bg-white/90 px-4 py-2 rounded-lg text-xs font-bold shadow-md">
+                <div className="absolute top-4 right-4 bg-white/90 px-4 py-2 text-xs font-bold shadow-md">
                     Саратовская область
                 </div>
              </div>

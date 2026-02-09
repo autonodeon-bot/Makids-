@@ -35,7 +35,7 @@ const DiscountSystem = () => {
             >
               {/* Card mimicking a puzzle piece connector visually */}
               <div className={`
-                relative h-full bg-white p-8 rounded-2xl shadow-sm border-2 
+                relative h-full bg-white p-8 shadow-sm border-2 
                 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-xl
                 ${index === DISCOUNT_TIERS.length - 1 ? 'border-brand-500 shadow-brand-200' : 'border-slate-100'}
               `}>
@@ -43,7 +43,7 @@ const DiscountSystem = () => {
                   <span className="text-5xl font-black text-slate-100 group-hover:text-brand-50 transition-colors">
                     0{tier.level}
                   </span>
-                  <div className="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-xl group-hover:bg-brand-500 group-hover:text-white transition-colors">
                     {tier.discountPercent}%
                   </div>
                 </div>

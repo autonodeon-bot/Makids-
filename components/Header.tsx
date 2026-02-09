@@ -49,7 +49,7 @@ const Header = () => {
           ))}
           <a 
             href="#partner-form" 
-            className="px-6 py-2 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition-all hover:scale-105 active:scale-95"
+            className="px-6 py-2 bg-slate-900 text-white font-bold hover:bg-slate-800 transition-all hover:scale-105 active:scale-95"
           >
             Стать партнером
           </a>
@@ -83,7 +83,7 @@ const Header = () => {
           ))}
           <a 
             href="#partner-form" 
-            className="text-center w-full py-3 bg-brand-600 text-white rounded-xl font-bold"
+            className="text-center w-full py-3 bg-brand-600 text-white font-bold"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Стать партнером

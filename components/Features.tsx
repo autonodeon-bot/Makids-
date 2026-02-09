@@ -23,7 +23,7 @@ const Features = () => {
           <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 mb-4">
             Почему выбирают MAKIDS?
           </h2>
-          <div className="w-24 h-1 bg-brand-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-brand-500 mx-auto"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -34,9 +34,9 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-100/50 transition-all duration-300 group"
+              className="p-8 bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-100/50 transition-all duration-300 group"
             >
-              <div className="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-brand-100 flex items-center justify-center text-brand-600 mb-6 group-hover:scale-110 transition-transform">
                 {iconMap[benefit.icon]}
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-3">
