@@ -12,6 +12,8 @@ export interface ProductImage {
   description: string;
   tempRange: string;
   sizes: string;
+  badge?: string;
+  season?: string;
 }
 
 export interface Benefit {

@@ -1,9 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PRODUCT_GALLERY } from '../constants';
-import { ThermometerSun, Ruler } from 'lucide-react';
+import { ProductImage } from '../types';
+import { ThermometerSun, Ruler, CalendarDays } from 'lucide-react';
 
-const Gallery = () => {
+interface GalleryProps {
+  onProductClick: (product: ProductImage) => void;
+}
+
+const Gallery: React.FC<GalleryProps> = ({ onProductClick }) => {
   return (
     <section id="catalog" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -26,40 +31,54 @@ const Gallery = () => {
           {PRODUCT_GALLERY.map((product) => (
             <motion.div
               key={product.id}
+              layoutId={`product-card-${product.id}`}
+              onClick={() => onProductClick(product)}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="flex-shrink-0 w-80 md:w-auto snap-center mr-4 md:mr-0 group"
+              className="flex-shrink-0 w-80 md:w-auto snap-center mr-4 md:mr-0 group flex flex-col cursor-pointer"
             >
-              <div className="relative rounded-3xl overflow-hidden aspect-[3/4] mb-6 shadow-md">
+              <div className="relative rounded-3xl overflow-hidden aspect-[3/4] mb-6 shadow-md bg-slate-100">
                 <img 
                   src={product.url} 
                   alt={product.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <button className="w-full py-3 bg-white text-brand-900 font-bold rounded-xl shadow-lg hover:bg-brand-50 transition-colors">
-                    Заказать
+                  <button className="w-full py-3 bg-white text-brand-900 font-bold rounded-xl shadow-lg hover:bg-brand-50 transition-colors pointer-events-none">
+                    Подробнее
                   </button>
                 </div>
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-600">
-                   SOFTSHELL
-                </div>
+                {/* Dynamic Badge */}
+                {product.badge && (
+                  <div className={`absolute top-4 left-4 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold shadow-sm ${
+                    product.badge === 'Premium' ? 'bg-amber-100/90 text-amber-700' : 'bg-white/90 text-brand-600'
+                  }`}>
+                    {product.badge.toUpperCase()}
+                  </div>
+                )}
               </div>
 
-              <h3 className="text-xl font-bold text-slate-900 mb-2">{product.title}</h3>
-              <p className="text-slate-500 text-sm mb-4 line-clamp-2">{product.description}</p>
+              <div className="flex-grow">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors">{product.title}</h3>
+                <p className="text-slate-500 text-sm mb-4 line-clamp-2">{product.description}</p>
+              </div>
               
-              <div className="flex gap-4">
-                <div className="flex items-center gap-2 px-3 py-2 bg-slate-50 rounded-lg text-sm text-slate-700">
-                  <ThermometerSun className="w-4 h-4 text-orange-500" />
+              <div className="flex flex-wrap gap-2 mt-auto">
+                <div className="flex items-center gap-1.5 px-3 py-2 bg-orange-50 rounded-lg text-xs font-medium text-orange-700">
+                  <ThermometerSun className="w-3.5 h-3.5" />
                   <span>{product.tempRange}</span>
                 </div>
-                <div className="flex items-center gap-2 px-3 py-2 bg-slate-50 rounded-lg text-sm text-slate-700">
-                  <Ruler className="w-4 h-4 text-blue-500" />
+                <div className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 rounded-lg text-xs font-medium text-blue-700">
+                  <Ruler className="w-3.5 h-3.5" />
                   <span>{product.sizes}</span>
                 </div>
+                {product.season && (
+                   <div className="flex items-center gap-1.5 px-3 py-2 bg-green-50 rounded-lg text-xs font-medium text-green-700">
+                    <CalendarDays className="w-3.5 h-3.5" />
+                    <span>{product.season}</span>
+                   </div>
+                )}
               </div>
             </motion.div>
           ))}

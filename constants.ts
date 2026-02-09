@@ -18,48 +18,57 @@ export const DISCOUNT_TIERS: DiscountTier[] = [
   { level: 6, minAmount: 400000, discountPercent: 45 },
 ];
 
-// In a real scenario, these URLs would point to the actual uploaded images.
-// I am using placeholders that describe the image content based on the user's photos.
 export const PRODUCT_GALLERY: ProductImage[] = [
   {
     id: '1',
-    url: 'https://images.unsplash.com/photo-1519457431-44ccd64a579b?q=80&w=800&auto=format&fit=crop',
+    // Replace with your actual image file, e.g., '/images/bunny-softshell.jpg'
+    url: 'https://images.unsplash.com/photo-1546445317-236268757832?q=80&w=800&auto=format&fit=crop', 
     title: 'Softshell "Зайка"',
     description: 'Бежевый костюм с принтом зайца. Стильно и удобно.',
-    tempRange: '+8°C до +20°C',
+    tempRange: '+8°C ... +20°C',
     sizes: '80-134',
+    badge: 'Softshell',
+    season: 'Весна / Лето / Осень'
   },
   {
     id: '2',
-    url: 'https://images.unsplash.com/photo-1621452773781-0f992ed03591?q=80&w=800&auto=format&fit=crop',
-    title: 'Softshell "Daisy Duck"',
+    url: 'https://images.unsplash.com/photo-1618397914838-8a8b8d0e7b8f?q=80&w=800&auto=format&fit=crop',
+    title: 'Softshell "Daisy"',
     description: 'Яркий фиолетовый костюм для девочек с любимым героем.',
-    tempRange: '+8°C до +20°C',
+    tempRange: '+8°C ... +20°C',
     sizes: '80-134',
+    badge: 'Softshell',
+    season: 'Весна / Лето / Осень'
   },
   {
     id: '3',
-    url: 'https://images.unsplash.com/photo-1503919545885-d7780173f306?q=80&w=800&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1519238263496-6361937a4ce9?q=80&w=800&auto=format&fit=crop',
     title: 'Парка "Hooligan"',
-    description: 'Хаки цвет, премиум ткань, стиль милитари.',
-    tempRange: '+8°C до +20°C',
+    description: 'Хаки цвет, Premium ткань, стиль милитари.',
+    tempRange: '+8°C ... +20°C',
     sizes: '80-134',
+    badge: 'Premium',
+    season: 'Весна / Лето / Осень'
   },
   {
     id: '4',
-    url: 'https://images.unsplash.com/photo-1604467794349-0b74285de7e7?q=80&w=800&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1620248733276-857e49eb7232?q=80&w=800&auto=format&fit=crop',
     title: 'Плащ "Music"',
     description: 'Фиолетовый плащ с музыкальным принтом.',
-    tempRange: '+8°C до +20°C',
+    tempRange: '+8°C ... +20°C',
     sizes: '80-134',
+    badge: 'New',
+    season: 'Весна / Лето / Осень'
   },
   {
     id: '5',
-    url: 'https://images.unsplash.com/photo-1530047625168-4b29ebf32484?q=80&w=800&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1503919545885-d7780173f306?q=80&w=800&auto=format&fit=crop',
     title: 'Softshell "Mickey"',
-    description: 'Серый костюм с Микки Маусом. Универсальный выбор.',
-    tempRange: '+8°C до +20°C',
+    description: 'Серый костюм. Стильная и удобная модель.',
+    tempRange: '+8°C ... +20°C',
     sizes: '80-134',
+    badge: 'Softshell',
+    season: 'Весна / Лето / Осень'
   },
 ];
 

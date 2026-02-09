@@ -5,7 +5,7 @@ import { Truck, Clock, CreditCard, BoxSelect } from 'lucide-react';
 
 const Conditions = () => {
   return (
-    <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <section id="conditions" className="py-20 bg-slate-900 text-white relative overflow-hidden">
         {/* Abstract shapes */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-purple/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
