@@ -27,7 +27,10 @@ export const PRODUCT_GALLERY: ProductImage[] = [
     tempRange: '+8°C ... +20°C',
     sizes: '80-134',
     badge: 'Softshell',
-    season: 'Весна / Лето / Осень'
+    season: 'Весна / Лето / Осень',
+    price: 3500,
+    category: 'Костюмы',
+    stock: 20
   },
   {
     id: '2',
@@ -37,7 +40,10 @@ export const PRODUCT_GALLERY: ProductImage[] = [
     tempRange: '+8°C ... +20°C',
     sizes: '80-134',
     badge: 'Softshell',
-    season: 'Весна / Лето / Осень'
+    season: 'Весна / Лето / Осень',
+    price: 3500,
+    category: 'Костюмы',
+    stock: 15
   },
   {
     id: '3',
@@ -47,7 +53,10 @@ export const PRODUCT_GALLERY: ProductImage[] = [
     tempRange: '+8°C ... +20°C',
     sizes: '80-134',
     badge: 'Premium',
-    season: 'Весна / Лето / Осень'
+    season: 'Весна / Лето / Осень',
+    price: 4200,
+    category: 'Верхняя одежда',
+    stock: 8
   },
   {
     id: '4',
@@ -57,7 +66,10 @@ export const PRODUCT_GALLERY: ProductImage[] = [
     tempRange: '+8°C ... +20°C',
     sizes: '80-134',
     badge: 'New',
-    season: 'Весна / Лето / Осень'
+    season: 'Весна / Лето / Осень',
+    price: 3800,
+    category: 'Плащи',
+    stock: 12
   },
   {
     id: '5',
@@ -67,7 +79,10 @@ export const PRODUCT_GALLERY: ProductImage[] = [
     tempRange: '+8°C ... +20°C',
     sizes: '80-134',
     badge: 'Softshell',
-    season: 'Весна / Лето / Осень'
+    season: 'Весна / Лето / Осень',
+    price: 3500,
+    category: 'Костюмы',
+    stock: 25
   },
 ];
 
